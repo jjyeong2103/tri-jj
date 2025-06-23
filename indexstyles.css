@@ -1,29 +1,32 @@
 body {
   margin: 0;
-  background-color: #0d1b2a;
-  color: #e0e1dd;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e0f7e9; /* 파스텔 연두 배경 */
+  color: #2f5f4f;
 }
 
 #app {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 1rem;
 }
 
-#warning-button {
-  background-color: #1b263b;
-  color: #e0e1dd;
-  font-size: 1.5rem;
+button {
   padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #b8e4c8; /* 버튼 색도 파스텔톤 */
+  color: #2f5f4f;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-#warning-button:hover {
-  background-color: #415a77;
+button:hover {
+  background-color: #a3d9b1;
 }
